@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="12.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+		<PackageReference Include="prometheus-net.DotNetRuntime" Version="4.4.1" />
+		<PackageReference Include="Serilog" Version="4.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DF.Application\DF.Application.csproj" />
+	  <ProjectReference Include="..\DF.Domain\DF.Domain.csproj" />
+	  <ProjectReference Include="..\DF.Infra\DF.Infra.csproj" />
+	</ItemGroup>
+
+</Project>
